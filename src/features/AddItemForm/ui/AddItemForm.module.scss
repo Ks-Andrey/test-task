@@ -1,0 +1,21 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  gap: 8px;
+}
+
+@media (max-width: 930px) {
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form > *:nth-child(5) {
+    grid-column: 1 / -1; /* занимает всю ширину сетки */
+  }
+}
+
+@media (max-width: 460px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,13 @@
+.button {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #151a2c;
+  color: var(--text);
+  cursor: pointer;
+  transition: transform .05s ease, background .2s ease;
+}
+.button:hover { background: #19203a; }
+.button:active { transform: translateY(1px); }
+.accent { background: #18312a; border-color: #245b45; }
+.danger { background: #2a1717; border-color: #5b2424; }
