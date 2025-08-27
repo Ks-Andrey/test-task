@@ -1,6 +1,7 @@
 import { forwardRef, memo, type ForwardedRef, type InputHTMLAttributes } from "react"
 import clsx from "clsx"
-import styles from './input.module.scss'
+
+import styles from './Input.module.scss'
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
     className?: string;
