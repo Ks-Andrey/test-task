@@ -44,7 +44,7 @@ const InventoryTable: FC<InventoryTableProps> = ({ items, clearInventory, totalC
           <span className={styles.badge} title="Всего предметов">Всего: <b>{totalCount}</b></span>
           <span className={styles.badge} title="Суммарный вес">Вес: <b>{totalWeight.toFixed(2)} кг</b></span>
         </div>
-        { clearInventory }
+        { items.length > 0 && clearInventory }
       </div>
     </div>
   )

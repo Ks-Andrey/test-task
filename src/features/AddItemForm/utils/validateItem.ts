@@ -10,10 +10,10 @@ export const validateItem = (data: Omit<InventoryItem, 'id'>): { valid: boolean;
   if (icon.length > 1) {
     try {
       if (!isImageUrl(icon)) {
-        return { valid: false, error: ICON_INVALID_IMAGE };
+        return { valid: false, error: ICON_INVALID_CHAR_OR_URL };
       }
     } catch {
-      return { valid: false, error: ICON_INVALID_CHAR_OR_URL };
+      return { valid: false, error: ICON_INVALID_IMAGE };
     }
   }
 
